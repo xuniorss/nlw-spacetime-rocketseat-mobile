@@ -42,11 +42,12 @@ export default function Layout() {
             screenOptions={{
                headerShown: false,
                contentStyle: { backgroundColor: 'transparent' },
+               animation: 'fade',
             }}
          >
             <Stack.Screen name="index" redirect={isUserAuth} />
-            <Stack.Screen name="new" />
             <Stack.Screen name="memories" />
+            <Stack.Screen name="new" />
          </Stack>
       </ImageBackground>
    )
